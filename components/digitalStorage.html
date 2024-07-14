@@ -1,0 +1,37 @@
+<div class="converter-container">
+    <div class="converter-header">
+        <i class="fas fa-hdd"></i>
+        <h3>Digital Storage Converter</h3>
+    </div>
+    <div class="converter-body">
+        <input type="number" id="digitalStorage-input" class="converter-input" placeholder="Enter value">
+        <div class="converter-select">
+            <select id="digitalStorage-units-from" class="select-units">
+                <option value="bit">Bits (bit)</option>
+                <option value="byte">Bytes (B)</option>
+                <option value="kb">Kilobytes (KB)</option>
+                <option value="mb">Megabytes (MB)</option>
+                <option value="gb">Gigabytes (GB)</option>
+                <option value="tb">Terabytes (TB)</option>
+                <option value="pb">Petabytes (PB)</option>
+            </select>
+            <span class="arrow">⇅</span>
+            <select id="digitalStorage-units-to" class="select-units">
+                <option value="bit">Bits (bit)</option>
+                <option value="byte">Bytes (B)</option>
+                <option value="kb">Kilobytes (KB)</option>
+                <option value="mb">Megabytes (MB)</option>
+                <option value="gb">Gigabytes (GB)</option>
+                <option value="tb">Terabytes (TB)</option>
+                <option value="pb">Petabytes (PB)</option>
+            </select>
+        </div>
+        <button class="converter-button" onclick="convertDigitalStorage()">Convert</button>
+        <div class="result-container">
+            <fieldset class="result-fieldset">
+                <legend>Result</legend>
+                <input class="result" id="digitalStorage-result" type="text" placeholder="Answer" readonly>
+            </fieldset>
+        </div>
+    </div>
+</div>

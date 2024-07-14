@@ -1,0 +1,29 @@
+<div class="converter-container">
+    <div class="converter-header">
+        <i class="fas fa-thermometer-half"></i>
+        <h3>Temperature Converter</h3>
+    </div>
+    <div class="converter-body">
+        <input type="number" id="temperature-input" class="converter-input" placeholder="Enter value">
+        <div class="converter-select">
+            <select id="temperature-units-from" class="select-units">
+                <option value="c">Celsius (°C)</option>
+                <option value="f">Fahrenheit (°F)</option>
+                <option value="k">Kelvin (K)</option>
+            </select>
+            <span class="arrow">⇅</span>
+            <select id="temperature-units-to" class="select-units">
+                <option value="c">Celsius (°C)</option>
+                <option value="f">Fahrenheit (°F)</option>
+                <option value="k">Kelvin (K)</option>
+            </select>
+        </div>
+        <button class="converter-button" onclick="convertTemperature()">Convert</button>
+        <div class="result-container">
+            <fieldset class="result-fieldset">
+                <legend>Result</legend>
+                <input class="result" id="temperature-result" type="text" placeholder="Answer" readonly>
+            </fieldset>
+        </div>
+    </div>
+</div>

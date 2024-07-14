@@ -1,0 +1,49 @@
+<div class="converter-container">
+    <div class="converter-header">
+        <i class="fas fa-cube"></i>
+        <h3>Volume Converter</h3>
+    </div>
+    <div class="converter-body">
+        <input type="number" id="volume-input" class="converter-input" placeholder="Enter value">
+        <div class="converter-select">
+            <select id="volume-units-from" class="select-units">
+                <option value="cubicm">Cubic Meters (m³)</option>
+                <option value="liter">Liters (L)</option>
+                <option value="milliliter">Milliliters (mL)</option>
+                <option value="cubiccm">Cubic Centimeters (cm³)</option>
+                <option value="cubicmm">Cubic Millimeters (mm³)</option>
+                <option value="cubicin">Cubic Inches (in³)</option>
+                <option value="cubicyard">Cubic Yards (yd³)</option>
+                <option value="cubicfoot">Cubic Feet (ft³)</option>
+                <option value="gallon">Gallons (gal)</option>
+                <option value="quart">Quarts (qt)</option>
+                <option value="pint">Pints (pt)</option>
+                <option value="cup">Cups (cup)</option>
+                <option value="fluidounce">Fluid Ounces (fl oz)</option>
+            </select>
+            <span class="arrow">⇅</span>
+            <select id="volume-units-to" class="select-units">
+                <option value="cubicm">Cubic Meters (m³)</option>
+                <option value="liter">Liters (L)</option>
+                <option value="milliliter">Milliliters (mL)</option>
+                <option value="cubiccm">Cubic Centimeters (cm³)</option>
+                <option value="cubicmm">Cubic Millimeters (mm³)</option>
+                <option value="cubicin">Cubic Inches (in³)</option>
+                <option value="cubicyard">Cubic Yards (yd³)</option>
+                <option value="cubicfoot">Cubic Feet (ft³)</option>
+                <option value="gallon">Gallons (gal)</option>
+                <option value="quart">Quarts (qt)</option>
+                <option value="pint">Pints (pt)</option>
+                <option value="cup">Cups (cup)</option>
+                <option value="fluidounce">Fluid Ounces (fl oz)</option>
+            </select>
+        </div>
+        <button class="converter-button" onclick="convertVolume()">Convert</button>
+        <div class="result-container">
+            <fieldset class="result-fieldset">
+                <legend>Result</legend>
+                <input class="result" id="volume-result" type="text" placeholder="Answer" readonly>
+            </fieldset>
+        </div>
+    </div>
+</div>

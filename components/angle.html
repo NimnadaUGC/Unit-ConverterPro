@@ -1,0 +1,29 @@
+<div class="converter-container">
+    <div class="converter-header">
+        <i class="fas fa-drafting-compass"></i>
+        <h3>Angle Converter</h3>
+    </div>
+    <div class="converter-body">
+        <input type="number" id="angle-input" class="converter-input" placeholder="Enter value">
+        <div class="converter-select">
+            <select id="angle-units-from" class="select-units">
+                <option value="deg">Degrees (°)</option>
+                <option value="rad">Radians (rad)</option>
+                <option value="grad">Gradians (grad)</option>
+            </select>
+            <span class="arrow">⇅</span>
+            <select id="angle-units-to" class="select-units">
+                <option value="deg">Degrees (°)</option>
+                <option value="rad">Radians (rad)</option>
+                <option value="grad">Gradians (grad)</option>
+            </select>
+        </div>
+        <button class="converter-button" onclick="convertAngle()">Convert</button>
+        <div class="result-container">
+            <fieldset class="result-fieldset">
+                <legend>Result</legend>
+                <input class="result" id="angle-result" type="text" placeholder="Answer" readonly>
+            </fieldset>
+        </div>
+    </div>
+</div>

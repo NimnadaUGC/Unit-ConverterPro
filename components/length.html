@@ -1,0 +1,41 @@
+<div class="converter-container">
+    <div class="converter-header">
+        <i class="fas fa-ruler"></i>
+        <h3>Length Converter</h3>
+    </div>
+    <div class="converter-body">
+        <input type="number" id="length-input" class="converter-input" placeholder="Enter value">
+        <div class="converter-select">
+            <select id="length-units-from" class="select-units">
+                <option value="m">Meters (m)</option>
+                <option value="km">Kilometers (km)</option>
+                <option value="cm">Centimeters (cm)</option>
+                <option value="mm">Millimeters (mm)</option>
+                <option value="in">Inches (in)</option>
+                <option value="ft">Feet (ft)</option>
+                <option value="yd">Yards (yd)</option>
+                <option value="mi">Miles (mi)</option>
+                <option value="nmi">Nautical Miles (nmi)</option>
+            </select>
+            <span class="arrow">⇅</span>
+            <select id="length-units-to" class="select-units">
+                <option value="m">Meters (m)</option>
+                <option value="km">Kilometers (km)</option>
+                <option value="cm">Centimeters (cm)</option>
+                <option value="mm">Millimeters (mm)</option>
+                <option value="in">Inches (in)</option>
+                <option value="ft">Feet (ft)</option>
+                <option value="yd">Yards (yd)</option>
+                <option value="mi">Miles (mi)</option>
+                <option value="nmi">Nautical Miles (nmi)</option>
+            </select>
+        </div>
+        <button class="converter-button" onclick="convertLength()">Convert</button>
+        <div class="result-container">
+            <fieldset class="result-fieldset">
+                <legend>Result</legend>
+                <input class="result" id="length-result" type="text" placeholder="Answer" readonly>
+            </fieldset>
+        </div>
+    </div>
+</div>

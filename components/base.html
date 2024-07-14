@@ -1,0 +1,35 @@
+<div class="converter-container">
+    <div class="converter-header">
+        <i class="fas fa-exchange-alt"></i>
+        <h3>Base Converter</h3>
+    </div>
+    <div class="converter-body">
+        <input type="text" id="base-input" class="converter-input" placeholder="Enter value">
+        <div class="converter-select">
+            <select id="base-units-from" class="select-units">
+                <option value="bin">Binary</option>
+                <option value="oct">Octal</option>
+                <option value="dec">Decimal</option>
+                <option value="hex">Hexadecimal</option>
+                <option value="custom">Custom Base</option>
+            </select>
+            <input type="number" id="custom-base-from" class="inputs" placeholder="Enter custom base (if selected)" style="display:none;" min="2" max="36">
+            <span class="arrow">⇅</span>
+            <select id="base-units-to" class="select-units">
+                <option value="bin">Binary</option>
+                <option value="oct">Octal</option>
+                <option value="dec">Decimal</option>
+                <option value="hex">Hexadecimal</option>
+                <option value="custom">Custom Base</option>
+            </select>
+            <input type="number" id="custom-base-to" class="inputs" placeholder="Enter custom base (if selected)" style="display:none;" min="2" max="36">
+        </div>
+        <button class="converter-button" onclick="convertBase()">Convert</button>
+        <div class="result-container">
+            <fieldset class="result-fieldset">
+                <legend>Result</legend>
+                <input class="result" id="base-result" type="text" placeholder="Answer" readonly>
+            </fieldset>
+        </div>
+    </div>
+</div>

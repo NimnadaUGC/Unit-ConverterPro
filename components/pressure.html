@@ -1,0 +1,37 @@
+<div class="converter-container">
+    <div class="converter-header">
+        <i class="fas fa-tachometer-alt"></i>
+        <h3>Pressure Converter</h3>
+    </div>
+    <div class="converter-body">
+        <input type="number" id="pressure-input" class="converter-input" placeholder="Enter value">
+        <div class="converter-select">
+            <select id="pressure-units-from" class="select-units">
+                <option value="pa">Pascals (Pa)</option>
+                <option value="kpa">Kilopascals (kPa)</option>
+                <option value="mpa">Megapascals (MPa)</option>
+                <option value="bar">Bar (bar)</option>
+                <option value="psi">Pounds per Square Inch (psi)</option>
+                <option value="atm">Atmospheres (atm)</option>
+                <option value="torr">Torr (torr)</option>
+            </select>
+            <span class="arrow">⇅</span>
+            <select id="pressure-units-to" class="select-units">
+                <option value="pa">Pascals (Pa)</option>
+                <option value="kpa">Kilopascals (kPa)</option>
+                <option value="mpa">Megapascals (MPa)</option>
+                <option value="bar">Bar (bar)</option>
+                <option value="psi">Pounds per Square Inch (psi)</option>
+                <option value="atm">Atmospheres (atm)</option>
+                <option value="torr">Torr (torr)</option>
+            </select>
+        </div>
+        <button class="converter-button" onclick="convertPressure()">Convert</button>
+        <div class="result-container">
+            <fieldset class="result-fieldset">
+                <legend>Result</legend>
+                <input class="result" id="pressure-result" type="text" placeholder="Answer" readonly>
+            </fieldset>
+        </div>
+    </div>
+</div>

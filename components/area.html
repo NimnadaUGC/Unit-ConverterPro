@@ -1,0 +1,43 @@
+<div class="converter-container">
+    <div class="converter-header">
+        <i class="fas fa-drafting-compass"></i>
+        <h3>Area Converter</h3>
+    </div>
+    <div class="converter-body">
+        <input type="number" id="area-input" class="converter-input" placeholder="Enter value">
+        <div class="converter-select">
+            <select id="area-units-from" class="select-units">
+                <option value="sqm">Square Meters (m²)</option>
+                <option value="sqkm">Square Kilometers (km²)</option>
+                <option value="sqcm">Square Centimeters (cm²)</option>
+                <option value="sqmm">Square Millimeters (mm²)</option>
+                <option value="sqin">Square Inches (in²)</option>
+                <option value="sqft">Square Feet (ft²)</option>
+                <option value="sqyd">Square Yards (yd²)</option>
+                <option value="sqmi">Square Miles (mi²)</option>
+                <option value="ac">Acres (ac)</option>
+                <option value="ha">Hectares (ha)</option>
+            </select>
+            <span class="arrow">⇅</span>
+            <select id="area-units-to" class="select-units">
+                <option value="sqm">Square Meters (m²)</option>
+                <option value="sqkm">Square Kilometers (km²)</option>
+                <option value="sqcm">Square Centimeters (cm²)</option>
+                <option value="sqmm">Square Millimeters (mm²)</option>
+                <option value="sqin">Square Inches (in²)</option>
+                <option value="sqft">Square Feet (ft²)</option>
+                <option value="sqyd">Square Yards (yd²)</option>
+                <option value="sqmi">Square Miles (mi²)</option>
+                <option value="ac">Acres (ac)</option>
+                <option value="ha">Hectares (ha)</option>
+            </select>
+        </div>
+        <button class="converter-button" onclick="convertArea()">Convert</button>
+        <div class="result-container">
+            <fieldset class="result-fieldset">
+                <legend>Result</legend>
+                <input class="result" id="area-result" type="text" placeholder="Answer" readonly>
+            </fieldset>
+        </div>
+    </div>
+</div>

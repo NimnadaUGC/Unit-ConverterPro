@@ -1,0 +1,37 @@
+<div class="converter-container">
+    <div class="converter-header">
+        <i class="fas fa-weight"></i>
+        <h3>Mass Converter</h3>
+    </div>
+    <div class="converter-body">
+        <input type="number" id="mass-input" class="converter-input" placeholder="Enter value">
+        <div class="converter-select">
+            <select id="mass-units-from" class="select-units">
+                <option value="kg">Kilograms (kg)</option>
+                <option value="g">Grams (g)</option>
+                <option value="mg">Milligrams (mg)</option>
+                <option value="lb">Pounds (lb)</option>
+                <option value="oz">Ounces (oz)</option>
+                <option value="ton">Tons (ton)</option>
+                <option value="t">Metric Tons (t)</option>
+            </select>
+            <span class="arrow">⇅</span>
+            <select id="mass-units-to" class="select-units">
+                <option value="kg">Kilograms (kg)</option>
+                <option value="g">Grams (g)</option>
+                <option value="mg">Milligrams (mg)</option>
+                <option value="lb">Pounds (lb)</option>
+                <option value="oz">Ounces (oz)</option>
+                <option value="ton">Tons (ton)</option>
+                <option value="t">Metric Tons (t)</option>
+            </select>
+        </div>
+        <button class="converter-button" onclick="convertMass()">Convert</button>
+        <div class="result-container">
+            <fieldset class="result-fieldset">
+                <legend>Result</legend>
+                <input class="result" id="mass-result" type="text" placeholder="Answer" readonly>
+            </fieldset>
+        </div>
+    </div>
+</div>
